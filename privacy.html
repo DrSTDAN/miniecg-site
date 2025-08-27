@@ -1,36 +1,167 @@
-Política de Privacidad – MiniECGC3
-Última actualización: 2025-08-26
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a84ff">
+  <title>Política de Privacidad – MiniECGC3</title>
+  <meta name="description" content="Política de Privacidad de la aplicación MiniECGC3 (Bluetooth LE ECG).">
+  <style>
+    :root{
+      --bg: #0b0f14;
+      --card: #121821;
+      --text: #e6edf3;
+      --muted: #a9b4c0;
+      --link: #4da3ff;
+      --accent: #1dd1a1;
+      --danger: #ff6b6b;
+      --shadow: 0 8px 28px rgba(0,0,0,.35);
+      --radius: 16px;
+      --maxw: 860px;
+    }
+    @media (prefers-color-scheme: light) {
+      :root{
+        --bg: #f7f9fc;
+        --card: #ffffff;
+        --text: #1d2a39;
+        --muted: #5a6b7d;
+        --link: #0a84ff;
+        --accent: #0db67b;
+        --danger: #e04848;
+        --shadow: 0 8px 28px rgba(71,85,105,.18);
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(13, 132, 255, .10), transparent 60%),
+                  radial-gradient(1000px 500px at 100% 0%, rgba(29, 209, 161, .10), transparent 60%),
+                  var(--bg);
+    }
+    .wrap{max-width:var(--maxw); margin: 32px auto; padding: 0 16px;}
+    header{
+      background: linear-gradient(135deg, #0a84ff, #1dd1a1);
+      color:#fff;
+      padding: 28px 24px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    header .title{margin:0; font-weight:800; letter-spacing:.2px}
+    header .subtitle{margin:6px 0 0; opacity:.9}
+    header .pill{
+      display:inline-block; margin-top:14px; padding:6px 12px;
+      background: rgba(255,255,255,.16); border-radius:999px; font-size:13px
+    }
+    .card{
+      background:var(--card);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin: 18px 0;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,.06);
+    }
+    h2{margin:0 0 12px; font-size: 20px;}
+    h3{margin:18px 0 8px; font-size: 16px;}
+    p{margin: 10px 0;}
+    ul{margin: 10px 0 10px 22px;}
+    a{color:var(--link); text-decoration: none}
+    a:hover{text-decoration: underline}
+    .grid{display:grid; gap:18px}
+    @media (min-width: 860px){
+      .grid{grid-template-columns: 1fr 1fr}
+    }
+    .muted{color:var(--muted)}
+    .note{border-left: 4px solid var(--accent); padding:10px 12px; background: rgba(29,209,161,.08); border-radius: 10px}
+    .warn{border-left: 4px solid var(--danger); padding:10px 12px; background: rgba(255,107,107,.08); border-radius: 10px}
+    footer{color:var(--muted); text-align:center; margin:28px 4px 40px}
+    code{background:rgba(148,163,184,.2); padding:.1rem .3rem; border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header aria-label="Encabezado">
+      <h1 class="title">Política de Privacidad</h1>
+      <p class="subtitle">Aplicación <strong>MiniECGC3</strong></p>
+      <div class="pill">Última actualización: <strong>26/08/2025</strong></div>
+    </header>
 
-1. Responsable
-Navcraftinternacional (“nosotros”).
+    <section class="card">
+      <h2>1. Responsable</h2>
+      <p><strong>Navcraftinternacional</strong>: <em>Navcraftinternacional SRL.</em></p>
+      <p><strong>Contacto</strong>: <a href="mailto:admin@navcraftinternacional.com">admin@navcraftinternacional.com</a></p>
+ 
+    </section>
 
-Contacto: admin@navcraftinternacional.com
+    <section class="card">
+      <h2>2. Datos que trata la app</h2>
+      <ul>
+        <li><strong>Bluetooth LE</strong>: la app escanea y se conecta a dispositivos BLE cercanos (p. ej., tu módulo ECG) para recibir señales.</li>
+        <li><strong>Android ≤ 11</strong>: el sistema puede exigir <em>Ubicación</em> para permitir el escaneo BLE. La app <strong>no utiliza</strong> tu ubicación con otros fines ni la almacena.</li>
+        <li><strong>Señal ECG</strong>: se procesa en el dispositivo (RAM), mostrando la traza y métricas locales (p. ej., BPM). <strong>No</strong> se sube a servidores ni se guarda de forma persistente por defecto.</li>
+      </ul>
+      <p><strong>No</strong> recopilamos datos personales, no creamos perfiles y no realizamos seguimiento entre apps o sitios.</p>
+    </section>
 
-2. Qué datos trata la app
-- Bluetooth LE: la app escanea y se conecta a dispositivos BLE cercanos para recibir señales ECG.
-- En Android ≤ 11: se solicita “Ubicación” únicamente porque el sistema exige este permiso para escanear BLE. La app NO usa la ubicación con fines distintos ni recolecta tu posición.
-- No recolectamos datos personales, no creamos perfiles, ni enviamos información a servidores propios.
+    <section class="card">
+      <h2>3. Finalidad</h2>
+      <p>Mostrar en tiempo real la señal ECG proveniente de tu dispositivo BLE y calcular métricas básicas (como el ritmo cardíaco) en tu teléfono sin transmisión a terceros.</p>
+    </section>
 
-3. Finalidad del tratamiento
-- Mostrar en tiempo real la señal ECG desde tu dispositivo BLE y calcular métricas locales (p. ej., BPM). Todo se procesa en el dispositivo.
+    <section class="card grid">
+      <div>
+        <h2>4. Almacenamiento y retención</h2>
+        <p>La señal y métricas se mantienen en memoria temporal. No se guardan de manera persistente salvo que en el futuro añadas una función explícita para exportar/guardar (y en tal caso, se actualizará esta política).</p>
+      </div>
+      <div>
+        <h2>5. Compartición de datos</h2>
+        <p>No compartimos datos con terceros. Tampoco enviamos información a servidores externos.</p>
+      </div>
+    </section>
 
-4. Almacenamiento y retención
-- Los datos de señal se procesan en memoria (RAM) y no se guardan persistente mente, salvo que el usuario lo solicite explícitamente (si en el futuro se añade función de guardar).
+    <section class="card">
+      <h2>6. Permisos y justificación</h2>
+      <ul>
+        <li><code>BLUETOOTH_SCAN</code>, <code>BLUETOOTH_CONNECT</code> (Android 12+): necesarios para descubrir y conectar dispositivos BLE.</li>
+        <li><code>ACCESS_FINE_LOCATION</code>/<code>ACCESS_COARSE_LOCATION</code> (Android ≤ 11): exigidos por el sistema para permitir escaneo BLE. <strong>No</strong> usamos la ubicación con fines distintos.</li>
+        <li>(Opcional) <code>WAKE_LOCK</code> o mantener la pantalla encendida: solo para evitar que el dispositivo entre en reposo durante la visualización del ECG.</li>
+      </ul>
+    </section>
 
-5. Compartición de datos
-- No compartimos datos con terceros. No se transmite información a servidores externos.
+    <section class="card">
+      <h2>7. Seguridad</h2>
+      <p>El intercambio con el dispositivo BLE se realiza mediante el stack Bluetooth del sistema operativo. Recomendamos utilizar hardware confiable y mantener el dispositivo actualizado.</p>
+    </section>
 
-6. Seguridad
-- El intercambio con el dispositivo BLE se realiza mediante el stack Bluetooth del sistema. Recomendamos usar dispositivos BLE confiables.
+    <section class="card grid">
+      <div>
+        <h2>8. Derechos del usuario</h2>
+        <p>Puedes desinstalar la app en cualquier momento. Si en el futuro se añade respaldo en la nube o cuentas, se incorporarán mecanismos para ejercer derechos de acceso, rectificación y borrado.</p>
+      </div>
+      <div>
+        <h2>9. Menores</h2>
+        <p>La app no está dirigida a menores de edad ni se diseña para su uso por niños.</p>
+      </div>
+    </section>
 
-7. Derechos del usuario
-- Puedes desinstalar la app en cualquier momento. Si en el futuro añadimos funciones de respaldo o nube, incluiremos mecanismos para solicitar acceso o borrado.
+    <section class="card">
+      <h2>10. Cambios de esta política</h2>
+      <p>Podemos actualizar esta política para reflejar cambios en la app o requisitos legales. Publicaremos la versión vigente en esta misma página.</p>
+    </section>
 
-8. Menores
-- Esta app no está dirigida a menores.
+    <section class="card">
+      <h2>11. Contacto</h2>
+      <p>Si tienes preguntas sobre privacidad, escribe a <a href="mailto:admin@navcraftinternacional.com">admin@navcraftinternacional.com</a>.</p>
+        </section>
 
-9. Cambios de esta política
-- Publicaremos cambios aquí. El uso continuo tras cambios implica aceptación.
-
-10. Contacto
-- Para dudas sobre privacidad: admin@navcraftinternacional.com
+    <footer>
+      © <span id="y"></span> MiniECGC3 · Política de Privacidad
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
